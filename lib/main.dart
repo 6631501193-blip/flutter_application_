@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_/week04/counter.dart';
+import 'package:flutter_application_/week04/input_demo.dart';
 
 
 void main() {
   runApp(
-    MaterialApp(home:Counter()));
+    MaterialApp(home:InputDemo()));
     }
