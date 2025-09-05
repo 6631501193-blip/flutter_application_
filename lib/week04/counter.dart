@@ -9,7 +9,7 @@ class Counter extends StatefulWidget {
 
 class _CounterState extends State<Counter> {
   // state variables
-  String message = 'hello gay';
+  int count = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,7 +19,7 @@ class _CounterState extends State<Counter> {
         ),
         body: Center(
           child: Text(
-            message,
+           'counter =  $count',
             style: TextStyle(
               fontSize: 24,
               color: const Color.fromARGB(255, 92, 28, 194),
@@ -30,11 +30,7 @@ class _CounterState extends State<Counter> {
           onPressed: (){
             // debugPrint('test');
             setState(() {
-             if (message == 'hello me'){
-              message = 'hello me';}
-              else{
-                message = 'hello gay';
-              }
+             count++;
             });
           },
           backgroundColor: Color.fromARGB(255, 154, 49, 196),
