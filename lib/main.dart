@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_/week04/input_demo.dart';
+import 'package:flutter_application_/week05/random_demo.dart';
+
 
 
 void main() {
   runApp(
-    MaterialApp(home:InputDemo()));
+    MaterialApp(home: RandomDemo()));
     }
