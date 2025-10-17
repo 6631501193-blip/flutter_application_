@@ -15,14 +15,8 @@ class Page1 extends StatelessWidget {
             Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => Page2(),
-                settings: RouteSettings(
-                  arguments: <String, dynamic>{
-                    'name': 'apple',
-                    'price': 15,
-                    'date': ['15 Oct', '20 Oct'],
-                  },
-                ),
+                builder: (context) =>
+                    Page2(name: 'Apple', price: 30, date: ['15 Oct', '20 Oct']),
               ),
             );
           },
