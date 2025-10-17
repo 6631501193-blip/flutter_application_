@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_/week08/fruit.dart';
 import 'package:flutter_application_/week08/page2.dart';
 
 class Page1 extends StatelessWidget {
@@ -16,7 +17,7 @@ class Page1 extends StatelessWidget {
               context,
               MaterialPageRoute(
                 builder: (context) =>
-                    Page2(name: 'Apple', price: 30, date: ['15 Oct', '20 Oct']),
+                    Page2(fruit: Fruit('apple', 15,['15 oct', '20 oct'], 'nihon'),),
               ),
             );
           },

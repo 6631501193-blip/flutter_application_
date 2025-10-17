@@ -1,15 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_/week08/fruit.dart';
 
 class Page2 extends StatelessWidget {
-  String name = '';
-  int price = 0;
-  List date = [];
+Fruit fruit;
 
   Page2({
     super.key,
-    required this.name,
-    required this.price,
-    required this.date,
+    required this.fruit
   });
 
   @override
@@ -22,9 +19,11 @@ class Page2 extends StatelessWidget {
       appBar: AppBar(title: Text('Page 2')),
       body: Column(
         children: [
-          Text('Name: $name'),
-          Text('Price: $price'),
-          Text('Expiration Date: $date'),
+          Text('Name: ${fruit.name}'),
+          Text('Price: ${fruit.price}'),
+          Text('Origin Date: ${fruit.date[0]}'),
+            Text('Expiration Date: ${fruit.date[1]}'),
+            Text('Country: ${fruit.country}'),
           FilledButton(
             onPressed: () {
               Navigator.pop(context);
